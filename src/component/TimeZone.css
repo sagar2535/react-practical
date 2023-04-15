@@ -1,0 +1,72 @@
+* {
+  font-family: 'cascadia code';
+  font-size: 1rem;
+}
+select {
+  display: flex;
+}
+.time-zone-heading {
+  display: flex;
+  margin: 20px;
+}
+
+.time-zone-change {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 600px) {
+  .time-zone-heading {
+    display: block;
+    margin: 10px;
+  }
+
+  .time-zone-change {
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .time-zone-heading {
+    display: flex;
+    margin: 15px;
+  }
+
+  .time-zone-change {
+    margin: 15px;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 901px) {
+  .time-zone-heading {
+    display: flex;
+    margin: 20px;
+  }
+
+  .time-zone-change {
+    margin: 20px;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .time-zone-heading {
+    display: flex;
+    margin: 25px;
+  }
+
+  .time-zone-change {
+    margin: 25px;
+    font-size: 1.1rem;
+  }
+}
+@media only screen and (min-width: 1501px) {
+  .time-zone-heading {
+    display: flex;
+    margin: 30px;
+  }
+
+  .time-zone-change {
+    margin: 30px;
+    font-size: 1.1rem;
+  }
+}

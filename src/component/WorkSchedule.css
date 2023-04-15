@@ -1,0 +1,37 @@
+.week__days {
+  display: flex;
+  margin: 20px;
+  padding: 10px;
+  gap: 40px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+  .week__days {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 20px;
+  }
+
+  .week__days h3 {
+    font-size: 1.2rem;
+  }
+  .week__days label {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .week__days {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    gap: 20px;
+  }
+
+  .week__days h3 {
+    font-size: 1.2rem;
+  }
+  .week__days label {
+    font-size: 0.8rem;
+  }
+}
