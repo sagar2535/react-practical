@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import './WorkSchedule.css';
 
 const daysOfWeek = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-
-const hoursOfDay = Array.from({ length: 16 }, (_, i) => {
-  const hour = i + 8;
-  const time = hour > 12 ? `${hour - 12}pm` : `${hour}am`;
+const hoursOfDay = Array.from({ length: 28 }, (_, i) => {
+  const hour = Math.floor(i / 2) + 8;
+  const minute = i % 2 === 0 ? '00' : '30';
+  const time =
+    hour > 12 ? `${hour - 12}:${minute} PM ` : `${hour}:${minute} AM `;
   return time;
 });
 
@@ -39,7 +40,7 @@ const WorkSchedule = () => {
                 type='checkbox'
                 checked={schedule[day].includes(time)}
                 onChange={() => handleCheckboxChange(day, time)}
-              />
+              />{' '}
               {time}
             </label>
           ))}
